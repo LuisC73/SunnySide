@@ -1,0 +1,41 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100vw;
+
+    &__content{
+        @include mixin.flex(flex-end,center,column);
+        background: url('../../assets/desktop/image-graphic-design.jpg') no-repeat;
+        
+        height: 100vh;
+        padding: 0 5rem;
+
+        &:nth-child(2){
+            background: url('../../assets/desktop/image-photography.jpg') no-repeat;
+        }
+    }
+
+    &__texts{
+       margin-bottom: 4rem;
+    }
+
+
+    &__h3{
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-family: vars.$font-two;
+        color: vars.$dark-cyan;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__p{
+        text-align: center;
+        padding: 0 4rem;
+        font-weight: 400;
+        color: vars.$dark-cyan;
+    }
+}

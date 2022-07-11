@@ -1,0 +1,55 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.testimonies{
+    width: 100vw;
+    padding: 2rem 5rem 6rem 5rem;
+
+    &__h3{
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        font-family: vars.$font-two;
+        color: vars.$grayish-blue;
+        text-transform: uppercase;
+        margin-top: 8rem;
+    }
+
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 5rem;
+    }
+
+    &__card{
+        @include mixin.flex(space-evenly,center,column);
+        padding: .8rem 4rem;
+        text-align: center;
+    }
+
+    &__img{
+        width: 5rem;
+        border-radius: 50%;
+        margin-bottom: 3.5rem;
+    }
+
+    &__p{
+        color: vars.$dark-blue2;
+        font-weight: 600;
+        font-size: .9rem;
+        margin-bottom: 2.5rem;
+    }
+
+    &__name{
+        font-family: vars.$font-two;
+        font-weight: 600;
+        color: #000;
+        font-size: 1.1rem;
+    }
+
+    &__post{
+        margin-top: .5rem;
+        color: vars.$dark-blue3;
+        font-size: .8rem;
+    }
+}

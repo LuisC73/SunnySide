@@ -1,0 +1,45 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.footer{
+    width: 100vw;
+    background-color: vars.$footer;
+    @include mixin.flex(center,center,column);
+    gap: 4rem;
+
+    &__h3{
+        margin-top: 5rem;
+        font-size: 1.8rem;
+        color: vars.$dark-cyan;
+        font-weight: 600;
+    }
+
+    &__row{
+        @include mixin.flex(space-evenly,center,row);
+        width: 30%;
+        text-align: center;
+    }
+
+    &__a{
+        color: vars.$dark-cyan;
+        font-weight: 500;
+    }
+
+    &__icons{
+        @include mixin.flex(space-evenly,center,row);
+        width: 15%;
+    }
+
+    &__icon{
+        color: vars.$dark-cyan;
+        font-size: 1.4rem;
+    }
+
+    &__attribution{
+        @include mixin.flex(space-evenly,center,row);
+    }
+
+    &__p{
+        margin-left: .8rem;
+    }
+}
