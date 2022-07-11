@@ -1,0 +1,9 @@
+@use '../_layout/vars'as vars;
+
+body{
+    min-height: 100%;
+    font-size: 18px;
+    overflow-x: hidden;
+    font-family: vars.$font-one;
+    line-height: 1.4em;
+}

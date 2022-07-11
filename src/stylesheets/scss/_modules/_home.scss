@@ -1,0 +1,33 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: url('../../assets/desktop/image-header.jpg') no-repeat;
+    background-size: cover;
+    @include mixin.flex(center,center,column);
+
+    &__h3{
+        font-size: 7rem;
+        font-family: vars.$font-two;
+        font-weight: 700;
+        color: vars.$white;
+    }
+
+    &__img{
+        width: 2rem;
+        margin-top: 11rem;
+        animation: arrowDown .8s infinite alternate;
+    }
+}
+
+
+@keyframes arrowDown {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(12px);
+    }
+}

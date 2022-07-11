@@ -1,0 +1,41 @@
+@use '../_layout/vars' as vars;
+@use '../_layout/mixins' as mixin;
+
+
+.nav{
+    @include mixin.flex(space-between,center,row);
+    padding: 0 2.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+
+    &__h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: vars.$white;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1)
+        }
+    }
+
+    &__ul{
+        @include mixin.flex(center,center,row);
+    }
+
+    &__li{
+        margin-left: 2.5rem;
+    }
+
+    &__a{
+        font-size: 1.1rem;
+        color: vars.$white;
+        transition: .3s;
+
+        &:hover{
+            transform: scale(1.3)
+        }
+    }
+}
