@@ -31,3 +31,21 @@
         transform: translateY(12px);
     }
 }
+
+@media (max-width:768px){
+    .home{
+        background: url('../../assets/mobile/image-header.jpg') no-repeat center;
+
+        &__h3{
+            font-size: 4rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+    
+        &__img{
+            width: 1.5rem;
+            margin-top: 2rem;
+            animation: arrowDown .8s infinite alternate;
+        }
+    }
+}

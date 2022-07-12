@@ -39,3 +39,38 @@
         color: vars.$dark-cyan;
     }
 }
+
+@media (max-width: 768px){
+    .projects{
+        grid-template-columns: 1fr;
+    
+        &__content{
+            @include mixin.flex(flex-end,center,column);
+            background: url('../../assets/desktop/image-graphic-design.jpg') no-repeat center;
+            background-size: cover;
+            padding: 2rem 0;
+    
+            &:nth-child(2){
+                background: url('../../assets/desktop/image-photography.jpg') no-repeat center;
+                background-size: cover;
+            }
+        }
+    
+        &__texts{
+           margin-bottom: 2rem;
+        }
+    
+    
+        &__h3{
+            font-size: 1.5rem;
+        }
+    
+        &__p{
+            text-align: center;
+            padding: 0 1rem;
+            font-weight: 600;
+            color: vars.$dark-cyan;
+            font-size: .95rem;
+        }
+    }
+}

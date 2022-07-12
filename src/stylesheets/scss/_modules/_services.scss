@@ -47,3 +47,41 @@
         height: 100%;
     }
 }
+
+@media (max-width:768px){
+    .services{
+
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+        &__texts{
+           padding: 3rem;
+           text-align: center;
+        }
+    
+        &__h3{
+            font-size: 2rem;
+        }
+    
+        &__p{
+            margin-top: 1.2rem;
+            font-size: 1rem;
+        }
+    
+        &__a{
+            font-size: 1.1rem;
+            margin-right: 0;
+            margin-top: 1.4rem;
+            margin-bottom: 2rem;
+        }
+    
+        
+        &__picture{
+            height: 15rem;
+            order: -1;
+        }
+    
+    }
+}

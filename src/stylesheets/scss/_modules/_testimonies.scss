@@ -53,3 +53,26 @@
         font-size: .8rem;
     }
 }
+
+@media (max-width:768px){
+    .testimonies{
+    width: 100vw;
+    padding: 2rem 0 6rem 0;
+
+    &__h3{
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    &__row{
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+
+    &__card{
+        padding: .8rem 2.5rem;
+        margin-top: 2rem;
+    }
+
+}
+}
