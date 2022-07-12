@@ -6,7 +6,7 @@
     background-color: vars.$footer;
     @include mixin.flex(center,center,column);
     gap: 4rem;
-
+  
     &__h3{
         margin-top: 5rem;
         font-size: 1.8rem;
@@ -23,16 +23,28 @@
     &__a{
         color: vars.$dark-cyan;
         font-weight: 500;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1);
+            color: #fff;
+        }
     }
 
     &__icons{
         @include mixin.flex(space-evenly,center,row);
         width: 15%;
+        
+       
     }
 
     &__icon{
         color: vars.$dark-cyan;
         font-size: 1.4rem;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.3);
+            color: #fff;
+        }
     }
 
     &__attribution{
@@ -61,6 +73,9 @@
         &__a{
             color: vars.$dark-cyan;
             font-weight: 500;
+            transition: .3s;
+
+            
         }
     
         &__icons{

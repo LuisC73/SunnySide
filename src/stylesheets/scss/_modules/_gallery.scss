@@ -8,11 +8,13 @@
     grid-template-columns: repeat(4,1fr);
     color: transparent;
     height: 70vh;
+    
 
     &__image{
         width: 100%;
         background: url('../../assets/desktop/image-gallery-milkbottles.jpg') no-repeat center;
         background-size: cover;
+        
         
         &2{
             background: url('../../assets/desktop/image-gallery-orange.jpg') no-repeat center;

@@ -4,12 +4,13 @@
 
 .nav{
     @include mixin.flex(space-between,center,row);
-    padding: 0 2.5rem;
+    padding: 2.5rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 12vh;
+    
 
     &__h3{
         font-size: 1.5rem;
@@ -46,8 +47,8 @@
 
 @media (max-width:768px){
     .nav{
-        padding: 0 1rem;
-        
+        padding: 0 2.8rem;
+
         &__ul{
             display: none;
         }
@@ -56,6 +57,8 @@
             display: block;
             font-size: 2rem;
             color: vars.$white;
+            border: none;
+            outline: none;
         }
     }
 }

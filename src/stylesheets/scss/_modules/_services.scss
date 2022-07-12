@@ -3,7 +3,7 @@
 
 .services{
     width: 100vw;
-
+    
     &__content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -36,6 +36,11 @@
         margin-top: 2rem;
         font-family: vars.$font-two;
         text-decoration: .3rem underline vars.$yellow;
+        transition: .3s;
+        &:hover{
+            transform: scale(1.1);
+            text-decoration: .3rem underline vars.$red;
+        }
     }
 
     

@@ -14,10 +14,56 @@
         text-transform: uppercase;
         font-size: .9rem;
         transition: .3s;
+        z-index: 3;
 
         &:hover{
             background-color: rgba(255,255,255,.3);
             transform: none;
+        }
+    }
+
+    &--sticky{
+        background-color: vars.$white;
+        box-shadow: 0 2px 10px rgb(0 0 0 / 60%);
+
+        &>.nav__h3,.nav__button,.nav__a{
+            color: #000;
+        }
+    }
+
+    &__ul--active{
+        @include mixin.flex(center,center,column);
+        position:absolute;
+        top: 99%;
+        left: 8%;
+        background-color: vars.$white;
+        width: 80vw;
+        z-index: 5;
+
+        &::before{
+            content: '';
+            width: 0;
+            height: 0;
+            // border-right: 50px solid transparent;
+            border-left: 30px solid transparent;
+            border-bottom: 30px solid vars.$white;
+            position: absolute;
+            top: -6%;
+            right: 0%;
+        }
+        
+
+        &> .nav__li{
+
+            margin: 1rem 0;
+        }
+    }
+
+    &__a{
+        color: vars.$dark-blue;
+
+        &--button{
+            background-color: vars.$yellow;
         }
     }
 }

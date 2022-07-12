@@ -7,6 +7,7 @@
     background: url('../../assets/desktop/image-header.jpg') no-repeat;
     background-size: cover;
     @include mixin.flex(center,center,column);
+   
 
     &__h3{
         font-size: 7rem;
@@ -19,6 +20,7 @@
         width: 2rem;
         margin-top: 11rem;
         animation: arrowDown .8s infinite alternate;
+        z-index: 1;
     }
 }
 
