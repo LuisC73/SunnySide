@@ -54,15 +54,16 @@
         
 
         &> .nav__li{
-
             margin: 1rem 0;
         }
+        
     }
 
-    &__a{
-        color: vars.$dark-blue;
+}
 
-        &--button{
+@media (max-width:768px){
+    .nav{
+        &__a--button{
             background-color: vars.$yellow;
         }
     }
